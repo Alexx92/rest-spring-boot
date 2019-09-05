@@ -7,7 +7,7 @@
 
 	<groupId>com.test.app</groupId>
 	<artifactId>rest-clean</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.0</version>
 
 	<name>Test :: Application :: rest :: Clean SPRING:BOOT</name>
 	<description>Spring Boot Fuse applicatoin running a Camel route to read REST input, and provide error publish and fix routes. Project clean</description>
@@ -179,7 +179,7 @@
 								<image>
 									<name>rest-clean:1.0.0</name>
 									<!-- "alias" is used to correlate to the containers in the pod spec -->
-									<alias>camel-app</alias>
+									<alias>test1-hc</alias>
 									<build>
 										<from>fabric8/java</from>
 										<assembly>
@@ -204,7 +204,7 @@
 									<replicas>1</replicas>
 									<containers>
 										<container>
-											<alias>camel-app</alias>
+											<alias>test1-hc</alias>
 											<ports>
 												<port>8778</port>
 											</ports>

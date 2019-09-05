@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: List
+items:
+- apiVersion: image.openshift.io/v1
+  kind: ImageStream
+  metadata:
+    name: rest-clean
+  spec:
+    tags:
+    - from:
+        kind: ImageStreamImage
+        name: rest-clean@sha256:d17a6b179455c83f8d6e629002dd10c0f16ab9feb1b301bf45f7df55c2b07b93
+        namespace: test1-hc
+      name: 1.0.0
